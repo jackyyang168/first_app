@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FirstApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header class="navbar navbar-fixed-top navbar-inverse">
+  		<div class="navbar-inner"> 
+  			<div class="container">
+  				<%= link_to "FirstApp","#", id:"logo"%>
+  			</div>
+  		</div>
+  	</header>
+  	<div class="container">
+    	<%= yield %>
+      <!-- New Footer -->
+      <footer class="footer">
+        <small>
+          <a href="codecamp.io">程式設計營</a>
+        </small>        
+      </footer>
+
+  	</div>
+  </body>
+</html>
